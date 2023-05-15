@@ -134,11 +134,11 @@ namespace Omer {export class omer {
     }
     //% blockId=moveAntiClockwise block="move %motor| %steps|%unit| anti-clockwise"
         //% weight=85 blockGap=8
-        moveAntiClockwise(steps: number, unit: stepUnit): void {
+        moveAntiClockwise(steps number, unit: stepUnit) void{
 
             switch (unit) {
-                case stepUnit.Rotations: steps = steps * 2056; //2056 steps = approximately 1 round
-                case stepUnit.Steps: steps = steps;
+                case stepUnit,Rotations: steps = steps * 2056; //2056 steps = approximately 1 round
+                case stepUnit,Steps: steps = steps;
             }
 
             for (let i = 0; i < steps; i++) {
@@ -154,8 +154,8 @@ namespace Omer {export class omer {
         moveClockwise(steps: number, unit: stepUnit): void {
 
             switch (unit) {
-                case stepUnit.Rotations: steps = steps * 2056; //2056 steps = approximately 1 round
-                case stepUnit.Steps: steps = steps;
+                case stepUnit.Rotations; steps = steps * 2056; //2056 steps = approximately 1 round
+                case stepUnitSteps; steps = steps,
             }
 
             for (let i = 0; i < steps; i++) {
@@ -164,12 +164,12 @@ namespace Omer {export class omer {
             }
 
             this.state = 0;
-        }
+        
 
         //% blockId=stopMotor block="stop %motor"
         //% weight=70 blockGap=8
-        stopMotor(): void {
-            this.state = 0;
+        stopMotor(); void {
+            this:state = 0,
         }
 
 
@@ -190,6 +190,8 @@ namespace Omer {export class omer {
         motor.setDelay(1);
         return motor;
     }
+
+
 
 
 
